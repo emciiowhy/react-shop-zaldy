@@ -1,0 +1,167 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #1e1f23; /* ChatGPT dark background */
+  color: #e5e7eb; /* Light gray text */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #2a2b32;
+  border-bottom: 1px solid #3f4047;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cart-btn {
+  background: #3a3b42;
+  border: none;
+  color: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cart-btn:hover {
+  background: #4a4b54;
+}
+
+.cart-count {
+  background: #10a37f;
+  color: white;
+  padding: 2px 8px;
+  margin-left: 6px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0;
+  color: #f1f1f1;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #2a2b32;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #3f4047;
+  transition: background 0.2s;
+}
+
+.product-card:hover {
+  background: #32333a;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.product-card p {
+  font-size: 13px;
+  color: #c2c3c7;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #10a37f;
+}
+
+.product-card button {
+  background: #10a37f;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #0e8d6c;
+}
+
+/* Cart Panel */
+.cart-panel {
+  position: fixed;
+  right: 0;
+  top: 60px;
+  width: 280px;
+  background: #2a2b32;
+  height: calc(100% - 60px);
+  border-left: 1px solid #3f4047;
+  padding: 20px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.product-card .cart-btn {
+  background: #3a3b42;
+  border: none;
+  padding: 8px 12px;
+  color: #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.product-card .cart-btn:hover {
+  background: #4a4b54;
+}
+
+.product-card .buy-btn {
+  background: #10a37f; /* ChatGPT green */
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.product-card .buy-btn:hover {
+  background: #0e8d6c;
+}
